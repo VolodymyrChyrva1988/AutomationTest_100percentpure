@@ -1,0 +1,108 @@
+TC_01,100percentpure,addItemToCart
+Summary
+Verify ability to add item to cart
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+Successfully Log In.
+
+Test Steps:
+1. On My Account page Click on Search icon;
+2. Enter "Target item" into search placeholder;
+3. Press Enter;
+4. On Search page click on "Target item";
+5. Click "Add to tote";
+6. Confirm "Target item" was added and visible;
+Expected result :
+Target Item placed in cart and visible .
+
+TC_2,100percentpure,Search
+Verify ability to search
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+Successfully Log In.
+
+Test Steps:
+1. On My Account page Click on 'Search' button;
+2. Enter "Target item name" into input field;
+3. Press Enter;
+4. Confirm "Target Item" appear in search result;
+Expected result :
+Target Item appeared in search result.
+
+TC_3,100percentpure,Edit Skin Profile
+Verify ability to edit my Skin Profile
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+Successfully Log In.
+
+Test Steps:
+1. On My Account page Click on Edit Account Icon;
+2. Click "Edit Skin Profile" Button;
+3. Select Skin Type "Dry";
+4. Select Skin Tone "Fair";
+5. Click 'Update Profile' button;
+6. Check changes appearance;
+Expected result :
+Skin Type changed to "Dry",Skin Tone changed to "Fair","Updating ..." appeared on Update Profile Button.
+
+TC_4,100percentpure,Subscribe
+Verify ability to subscribe for promotion
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+Successfully Log In.
+
+Test Steps:
+1. On My Account Page and Click on "Subscribe";
+2. Enter "qwerty@ccc.com" into "Enter your email" placeholder;
+3. Press Enter;
+4. Check Success message;
+Expected result :
+Message "Thanks for subscribing!" should appeared.
+
+
+TC_5,100percentpure,Perks points
+Verify ability to get points for Birth Day
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+Successfully Log In.
+
+Test Steps:
+1. On My Account page Click 'Purist perks' icon;
+2. Hit "Earn Points";
+3. Click "Happy Birth Day";
+4. Enter Birth dat data ;
+5. Hit "Save Birth day";
+6. Check Points was claimed;
+Expected result :
+Message "You will get 200 points in ... days "
+
+TC_6,100percentpure,Login In
+Verify ability to Login with valid credentials
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+
+Test Steps:
+1. On Login page Click 'Accept all cookies';
+2. Hit "User" icon;
+3. Enter valid Password into "Password" placeholder;
+4. Enter valid Email into "Email" placeholder;
+5. Hit "Sign In";
+Expected result :
+My Account page open,"Hello Volodymyr" message appeared,"My Account" icon is visible
+
+
+
+TC_7,100percentpure,Invalid Log In
+Confirm User can not Log In with invalid credentials
+Precondition:
+Register a New User, username(Volodymyr), email(volodymyr.chyrva@yahoo.com), password(qwerty).
+
+Test Steps:
+1. On Login page Click 'Accept all cookies';
+2. Hit "User" icon;
+3. Enter invalid Password into "Password" placeholder;
+4. Enter valid Email into "Email" placeholder;
+5. Hit "Sign In";
+
+Expected result :
+My Account Page was not opened,Message "Incorrect email or password." appeared

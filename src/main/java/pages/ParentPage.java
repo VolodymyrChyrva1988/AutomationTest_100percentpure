@@ -23,31 +23,11 @@ abstract public class ParentPage extends CommonActionsWithElements{
 
         abstract String getRelativeURL();
 
-
-
-
-
-
-
-
-        /**
-         * Example
-         * gooogle.com == gooogle.com -> true
-         *
-         */
-
-
-
         protected void checkURL(){
 
             Assert.assertEquals("Invalid page", base_url + getRelativeURL() ,webDriver.getCurrentUrl());
         }
 
-        /**
-         * Example
-         * gooogle.com == gooogle -> true
-         *
-         */
         protected void checkURLContainsRelative(){
 
             Assert.assertThat("",webDriver.getCurrentUrl()

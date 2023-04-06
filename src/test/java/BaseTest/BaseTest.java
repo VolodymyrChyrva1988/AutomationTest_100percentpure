@@ -36,7 +36,7 @@ public class BaseTest {
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         loginPage = new LoginPage(webDriver);
         myAccountPage = new MyAccountPage(webDriver);
-searchPage=new SearchPage(webDriver);
+        searchPage = new SearchPage(webDriver);
     }
 
     @After

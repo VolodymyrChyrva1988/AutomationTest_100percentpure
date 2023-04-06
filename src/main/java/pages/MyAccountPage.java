@@ -37,10 +37,10 @@ public class MyAccountPage extends ParentPage {
     private WebElement placeholderSearch;
     @FindBy(xpath = "//*[@class=\"site-header__cart-toggle js-drawer-open-right\" and @aria-expanded='true']")
     private WebElement myCartIcon;
-@FindBy(xpath = "//*[@placeholder=\"Enter your email\" and @aria-label='Enter your email']")
-private WebElement subscribeEmail;
-@FindBy(xpath = "//*[text()='Thanks for subscribing!']")
-private WebElement subscribeSuccessMsg;
+    @FindBy(xpath = "//*[@placeholder=\"Enter your email\" and @aria-label='Enter your email']")
+    private WebElement subscribeEmail;
+    @FindBy(xpath = "//*[text()='Thanks for subscribing!']")
+    private WebElement subscribeSuccessMsg;
 
 
     private LoginPage loginPage = new LoginPage(webDriver);
@@ -53,9 +53,7 @@ private WebElement subscribeSuccessMsg;
 
     public MyAccountPage openMyAccountPage() {
         loginPage.openLoginPage();
-        //.clickAccCookies();
         if (!isElementDisplayed(signInButton)) {
-//            loginPage.clickAccCookies()
             loginPage.clickOnUserIcon()
                     .enterValidCredToLoginForm()
                     .clickOnSignInBtn();
@@ -135,7 +133,7 @@ private WebElement subscribeSuccessMsg;
 
 
     public MyAccountPage enterEmailToSibscribe() {
-        enterTextInToElement(subscribeEmail,"qwerty@ccc.com");
+        enterTextInToElement(subscribeEmail, "qwerty@ccc.com");
         return this;
     }
 

@@ -16,10 +16,6 @@ public class SearchTest extends BaseTest {
                 .clickEnter();
         searchPage.checkIfRedirectedToSearchPage()
                 .checkTargetItemInSearchResult()
-
         ;
-
-
-
     }
 }
